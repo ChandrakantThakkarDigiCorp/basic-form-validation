@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="">
+
+<head>
+
+    <title>Chandrakant Thakkar Simple Form</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/propeller.min.css">
+    <script src="js/jquery-1.12.2.min.js"></script>
+    <!-- <script src="assets/js/bootstrap.min.js"></script> -->
+    <script src="js/propeller.min.js"></script>
+    <script src="js/formValidation.js"></script>
+    <script>
+        $(document).ready(function() {
+
+        });
+    </script>
+    <style>
+        .validationFormControl {
+            color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="pmd-sidebar-overlay"></div>
+    <div id="content" class="pmd-content inner-page" style="width:80%;">
+        <div class="container-fluid full-width-container">
+            <div class="section section-custom billinfo">
+                <!--section-title -->
+                <h2>Employee Registration <h3 class="pull-right">By Chandrakant Thakkar&nbsp;&nbsp;  <h3></h2>
+                <!--section-title end -->
+
+                <!-- section content start-->
+                <form id="validationForm" action="" method="post">
+                    <div class="pmd-card pmd-z-depth">
+                        <div class="pmd-card-body">
+                            <div class="group-fields clearfix row">
+                                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                    <div class="form-group pmd-textfield pmd-textfield-floating-label">
+                                        <label for="regular1" class="control-label">
+                                            Employee Name
+                                        </label>
+                                        <input type="text" id="empName" validation="required,onlyalphabetwithspace" class="form-control">
+                                        <span type="text" id="empName_validation" class="validationFormControl" style="display:none;">Input Required<span>
+							</div>
+						</div>
+					</div>
+          <div class="group-fields clearfix row">
+            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+              <div class="form-group pmd-textfield pmd-textfield-floating-label">
+                 <label for="regular1" class="control-label">
+                 City
+                 </label>
+                 <input type="text" id="city" validation="required,onlyalphabet" class="form-control">
+                 <span type="text" id="city_validation" class="validationFormControl" style="display:none;">Input Required<span>
+              </div>
+            </div>
+            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+               <div class="form-group pmd-textfield pmd-textfield-floating-label">
+                 <label for="regular1" class="control-label">
+                 Pincode
+                 </label>
+                 <input type="text" id="pincode" validation="required,onlydigit,size(6)" class="form-control">
+                 <span type="text" id="pincode_validation" class="validationFormControl" style="display:none;">Input Required<span>
+              </div>
+            </div>
+          </div>
+          <div class="group-fields clearfix row">
+						<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+							<div class="form-group pmd-textfield pmd-textfield-floating-label">
+							   <label for="regular1" class="control-label">
+								 Contact Number
+							   </label>
+							   <input type="text" id="contact" validation="required,onlydigit,size(10)" class="form-control">
+                 <span type="text" id="contact_validation" class="validationFormControl" style="display:none;">Input Required<span>
+							</div>
+						</div>
+						<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+						   <div class="form-group pmd-textfield pmd-textfield-floating-label">
+							   <label for="regular1" class="control-label">
+								 Email-Id
+							   </label>
+							   <input type="text" id="email" validation="required,email" class="form-control">
+                 <span type="text" id="email_validation" class="validationFormControl" style="display:none;">Input Required<span>
+							</div>
+						</div>
+					</div>
+					<div class="group-fields clearfix row">
+						<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+							<div class="form-group pmd-textfield pmd-textfield-floating-label">
+							  <label class="control-label">Address</label>
+							  <textarea id="address" validation="required" class="form-control"></textarea>
+                <span type="text" id="address_validation" class="validationFormControl" style="display:none;">Input Required<span>
+							</div>
+						</div>
+					</div>
+
+				</div>
+				<div class="pmd-card-actions">
+					<a href="javascript:void(0);" onclick="formValidation('validationForm')" class="btn btn-primary next">Submit</a>
+					<a href="javascript:void(0);" onclick="resetFormWithValidation('validationForm')" class="btn btn-default">Cancel</a>
+				</div>
+			</div> <!-- section content end -->
+			</form>
+		</div>
+	</div><!-- tab end -->
+</div><!-- content area end -->
+</body>
+</html>
