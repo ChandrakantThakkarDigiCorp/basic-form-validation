@@ -73,4 +73,4 @@ resetFormWithValidation('validationForm')
 ---
 
 
-### <a href='https://rawgit.com/chandrakant1990/formValidation/master/index.html' target='_blank'>Click Here To See Output</a>
+### <a href='https://rawgit.com/ChandrakantThakkarDigiCorp/basic-form-validation/master/index.html' target='_blank'>Click Here To See Output</a>
